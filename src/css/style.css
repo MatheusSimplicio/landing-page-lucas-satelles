@@ -6,10 +6,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 40px;
+    padding: 15px 40px 0;
     line-height: 50px;
     background-color: #D7E1EA;
-    /* background-color: rgb(228, 235, 241)  */
+}
+
+header .logo img{
+    width: 115px;
+    height: 115px;
 }
 
 header ul {
@@ -24,6 +28,23 @@ header ul li a:visited {
     color: #43627f;
     font-weight: 800;
     font-size:20px;
+    position: relative;
+}
+
+header ul li a::after {
+    content: "";
+    position: absolute;
+    background-color: #43627f;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -2px;
+
+}
+
+header ul li a:hover::after{
+    width: 100%;
+    transition: .3s ease-in-out;
 }
 
 .hero {
