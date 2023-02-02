@@ -59,6 +59,17 @@ header ul li a:hover::after{
     font-size: 40px;
     font-weight: 700;
     color: #43627f;
+    animation: Animation 1 ease-in-out 1s both;
+}
+
+@keyframes Animation {
+    from {
+        transform: translateY(-3px) scale(0);
+    }
+
+    to {
+        transform: translateY(0);
+    }
 }
 
 .sobre {
